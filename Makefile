@@ -527,7 +527,6 @@ CXXFLAGS += $(WARNING_FLAGS) -I. -I./include $(PLATFORM_CXXFLAGS) $(OPT) -Woverl
 # completely reject our usage of offsetof, but we will solve that when it
 # happens.
 CXXFLAGS += -Wno-invalid-offsetof
-
 LDFLAGS += $(PLATFORM_LDFLAGS)
 
 LIB_OBJECTS = $(patsubst %.cc, $(OBJ_DIR)/%.o, $(LIB_SOURCES))
